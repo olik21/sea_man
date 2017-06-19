@@ -1,0 +1,40 @@
+/*----------------------*/
+body {
+  font-family: Helvetica, sans-serif;
+  color: #4e525d; }
+
+a {
+  color: #484c55; }
+  a:hover {
+    color: #49cbcd; }
+  a:active {
+    color: #49cbcd; }
+
+.wrapper {
+  width: 100%; }
+
+.content {
+  width: 1170px;
+  margin: auto;
+  border: 1px solid red; }
+
+/*--------------------------------------
+// HEADER
+//-------------------------------------*/
+nav .logo {
+  float: left; }
+
+nav ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+nav li {
+  display: inline-block; }
+
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #484c55; }

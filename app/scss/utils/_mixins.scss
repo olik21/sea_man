@@ -1,0 +1,23 @@
+@mixin breakpoints($grid-breakpoints) {
+	
+}
+@mixin linx ($link,  $hover, $active) {
+  a{
+    color: $link;
+    
+    &:hover {
+      color: $hover;   
+    }
+    &:active {
+      color: $active;   
+    }
+  }
+}
+@mixin border {
+  border: {
+    style: solid;
+    width: 1px;
+    color: #ff0000;
+  }
+  
+}
