@@ -76,6 +76,3 @@ p{
 		 @include pad(10px 50px);
 	}
 }
-.title.current , .buy.current button{
-		background: $turquoise;
-}

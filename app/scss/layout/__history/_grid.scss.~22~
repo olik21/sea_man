@@ -30,12 +30,31 @@
 .col-2, .col-3, .col-4 {
 	float: left;
 	@include pad(15px);
+
 }
 
 .col-2{width: $width-2;}
-.col-3{width: $width-3;}
-.col-4{width: $width-4;}
+.col-3{width: $width-3; text-align: center;}
+.col-4{
+	width: $width-4;
+		@media (max-width:992px){
+			width: $width-2; 
+		}
+		@media (max-width:660px){
+			width: $all-width ;
+		}
+}
 
-.content.team{
+.content.team, .plan .content{
 	@include pad (100px 0);
+	
+		@media (max-width:768px){
+			@include pad (70px 0);
+		}
+			@media (max-width:480px){
+			@include pad (50px 0);
+		}
+}
+.plan{
+	background: $gray-2;
 }

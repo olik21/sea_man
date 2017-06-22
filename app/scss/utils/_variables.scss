@@ -3,6 +3,10 @@ $font-h: 'OpenSansSemiBold';
 
 $font-base: 14px;
 $font-menu: $font-base +1;
+$font-title: $font-base *2 - 2;
+$font-price: $font-base +6;
+$font-buy: $font-base +3;
+
 
 $font-h1-size: $font-base * 4.5;
 $font-h2-size: $font-base * 3;
@@ -85,7 +89,7 @@ $gray-2: #f1f1f1;
 
 $links-color: #484c55;
 $turquoise: #49cbcd;
-$dark-grey: #485460;
+$light-black: #485460;
 $dark-grey-light: #788492;
 $purple: #bface2;
 

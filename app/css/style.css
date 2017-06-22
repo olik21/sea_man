@@ -724,6 +724,34 @@ p {
   line-height: 1.3em;
   padding: 10px 15px; }
 
+.title {
+  padding: 27px 0;
+  background: #485460;
+  color: #fff;
+  font-size: 26px; }
+
+.plan ul li {
+  padding: 15px 0;
+  background: #fff;
+  border-top: 1px solid #f1f1f1; }
+
+.price {
+  padding: 23px 0;
+  background: #f8f9fb;
+  font-size: 20px; }
+
+.buy {
+  padding: 38px 5px;
+  background: #f8f9fb; }
+  .buy button {
+    border: none;
+    background: #485460;
+    font-size: 17px;
+    padding: 10px 50px; }
+
+.title.current, .buy.current button {
+  background: #49cbcd; }
+
 nav {
   position: relative;
   height: 100px;
@@ -827,7 +855,18 @@ nav {
   width: 50%; }
 
 .col-3 {
-  width: 33.33333%; }
+  width: 33.33333%;
+  text-align: center;
+  padding: 0 15px; }
+  @media (max-width: 992px) and (min-width: 769px) {
+    .col-3 {
+      width: 50%; }
+      .col-3:last-child {
+        margin: 30px auto 0 25%; } }
+  @media (max-width: 768px) {
+    .col-3 {
+      width: 100%;
+      margin: 30px auto; } }
 
 .col-4 {
   width: 25%; }
@@ -838,14 +877,17 @@ nav {
     .col-4 {
       width: 100%; } }
 
-.content.team {
+.content.team, .plan .content {
   padding: 100px 0; }
   @media (max-width: 768px) {
-    .content.team {
+    .content.team, .plan .content {
       padding: 70px 0; } }
   @media (max-width: 480px) {
-    .content.team {
+    .content.team, .plan .content {
       padding: 50px 0; } }
+
+.plan {
+  background: #f1f1f1; }
 
 button {
   color: #fff;

@@ -49,6 +49,32 @@ $font-h2-size-sm: $font-base * 3 * $sm;
 $font-h3-size-sm: $font-base * 1.57 *$sm;
 $font-h4-size-sm: $font-base * $sm;
 
+///*************  max width 660  xm ***********************/
+
+$xs: 0.6;
+
+$font-base-xs: 14px * $xs;
+
+$font-menu-xs: ($font-base +1) * $xs;
+
+$font-h1-size-xs: $font-base * 4.5 * $xs;
+$font-h2-size-xs: $font-base * 3 * $xs;
+$font-h3-size-xs: $font-base * 1.57 *$xs;
+$font-h4-size-xs: $font-base * $xs;
+
+
+///********max width 480  xm *********/
+$xm: 0.4;
+
+$font-base-xm: 14px * $xm;
+
+$font-menu-xm: ($font-base +1) * $xm;
+
+$font-h1-size-xm: $font-base * 4.5 * $xm;
+$font-h2-size-xm: $font-base * 3 * $xm;
+$font-h3-size-xm: $font-base * 1.57 *$xm;
+$font-h4-size-xm: $font-base * $xm;
+
 ///************************************/
 
 $primary-color: #4e525d;

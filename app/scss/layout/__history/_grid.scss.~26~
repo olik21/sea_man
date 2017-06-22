@@ -34,18 +34,28 @@
 }
 
 .col-2{width: $width-2;}
-.col-3{width: $width-3;}
+.col-3{
+	width: $width-3; 
+	text-align: center; 
+	@include pad(0 15px )
+	@media (max-width:992px){
+		width: $width-2; 
+		&:last-child{
+		@include marg(30px auto 0 25%);
+		}
+	}
+}
 .col-4{
 	width: $width-4;
 		@media (max-width:992px){
 			width: $width-2; 
 		}
-		@media (max-width:768px){
+		@media (max-width:660px){
 			width: $all-width ;
 		}
 }
 
-.content.team{
+.content.team, .plan .content{
 	@include pad (100px 0);
 	
 		@media (max-width:768px){
@@ -54,4 +64,7 @@
 			@media (max-width:480px){
 			@include pad (50px 0);
 		}
+}
+.plan{
+	background: $gray-2;
 }

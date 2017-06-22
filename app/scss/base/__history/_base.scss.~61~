@@ -55,8 +55,7 @@ p{
 }
 .plan ul li{
 	@include pad(15px 0 );
-	background: $white;
-	border-top: 1px solid $gray-2;
+	background: $light-black;
 	
 }
 .price{
@@ -75,7 +74,4 @@ p{
 		 font-size: $font-buy;
 		 @include pad(10px 50px);
 	}
-}
-.title.current , .buy.current button{
-		background: $turquoise;
 }
