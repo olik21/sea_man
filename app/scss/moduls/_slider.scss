@@ -1,0 +1,220 @@
+
+.swiper-container {
+        width: 100%;
+        height: 100%;
+       
+ }
+ .swiper-slide {
+	 position:relative;
+  	img{
+  		margin: auto;
+  		display: block;
+  		
+  		z-index:1;
+  	}
+       
+ }
+    
+  .swiper-slide1, .swiper-slide2 {
+		background: #6ba198; 
+		background: -moz-linear-gradient(top,  #6ba198 0%, #8fbeae 50%, #558c89 100%); 
+		background: -webkit-linear-gradient(top, #a4ded2 0%,#8fbeae 50%,#558c89 100%); 
+		background: linear-gradient(to bottom, #a4ded2 0%,#8fbeae 50%,#558c89 100%); 
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4ded2', endColorstr='#558c89',GradientType=0 ); 
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+ background: #fff url("../images/arrows.png") no-repeat 8px 10px;
+  @include border-radius(50px);
+  width:55px; height: 55px;
+  left: 10px;
+  right: auto; 
+  	@media (max-width: 768px){
+  		width:45px; height: 45px;
+  		background-position: 3px 5px;
+  	}
+  	@media (max-width: 480px){
+  		width:26px; height: 26px;
+  		background: #fff url("../images/arrows-small.png") no-repeat 0px 0px;
+  	}
+  
+  }
+
+.swiper-button-prev.swiper-button-black,
+.swiper-container-rtl .swiper-button-next.swiper-button-black {
+  background-image: url("../images/arrows.png") no-repeat 8px 10px;
+	@media (max-width: 768px){
+  		width:45px; height: 45px;
+  		background-position: 3px 5px;
+  	}
+  	@media (max-width: 480px){
+  		width:26px; height: 26px;
+  		background: #fff url("../images/arrows-small.png") no-repeat 0px 0px;
+  	}
+}
+
+.swiper-button-prev.swiper-button-white,
+.swiper-container-rtl .swiper-button-next.swiper-button-white {
+  background-image:url("../images/arrows.png") no-repeat 8px 10px;
+  @media (max-width: 768px){
+  		width:45px; height: 45px;
+  		background-position: 3px 5px;
+  	}
+  	@media (max-width: 480px){
+  		width:26px; height: 26px;
+  		background: #fff url("../images/arrows-small.png") no-repeat 0px 0px;
+  	}
+}  
+
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  background: #fff url("../images/arrows.png") no-repeat -42px 10px;
+  @include border-radius(50px);
+  width:55px; height: 55px;
+  padding: 0;
+  right: 10px;
+  left: auto; 
+  	@media (max-width: 768px){
+  		width:45px; height: 45px;
+  		background-position: -47px 5px;
+  	}
+  	@media (max-width: 480px){
+  		width:26px; height: 26px;
+  		background: #fff url("../images/arrows-small.png") no-repeat -33px 0px;
+  	}
+  
+  }
+
+.swiper-button-next.swiper-button-black,
+.swiper-container-rtl .swiper-button-prev.swiper-button-black {
+  background-image: url("../images/arrows.png") no-repeat -42px 10px; 
+	@media (max-width: 768px){
+  		width:45px; height: 45px;
+  		background-position: -47px 5px;
+  	}
+  	@media (max-width: 480px){
+  		width:26px; height: 26px;
+  		background: #fff url("../images/arrows-small.png") no-repeat -33px 0px;
+  	}  
+  
+}
+
+.swiper-button-next.swiper-button-white,
+.swiper-container-rtl .swiper-button-prev.swiper-button-white {
+  background-image: url("../images/arrows.png") no-repeat -42px 10px; 
+	@media (max-width: 768px){
+  		width:45px; height: 45px;
+  		background-position: -47px 5px;
+  	}
+  	@media (max-width: 480px){
+  		width:26px; height: 26px;
+  		background: #fff url("../images/arrows-small.png") no-repeat -33px 0px;
+  	}
+  
+}
+ 
+ 
+section.swiper-container{	@include pad ( 0 );}
+  
+.note{
+	position: absolute;
+	z-index:5;
+	top:12%; width: 95%;
+	left:5%;
+	text-align: center;
+		@media (max-width:992px) {
+			top:10%; 
+			}
+		@media (max-width:660px) {
+			top:5%; 
+			}
+	
+	h1{
+			@media (max-width:1200px) {
+				font-size: $font-h1-size-lg;
+			}
+			@media (max-width:992px) {
+				font-size: $font-h1-size-md;
+			}
+			@media (max-width:768px) {
+				font-size: $font-h1-size-sm;
+			}
+			@media (max-width:660px) {
+				font-size: $font-h1-size-xs;
+			}
+			@media (max-width:480px) {
+				font-size: $font-h1-size-xm;
+			}
+	}
+	p{
+		color:$white;
+		font-size: $font-base*1.64;
+		line-height: $font-base*2.5;
+		width:25%;
+		@include marg(20px auto 30px);
+		
+		
+		@media (max-width:1440px) {
+   	 	width: 30%; 
+   	}
+   	@media (max-width:1200px) {
+   		font-size: $font-base * 1.54 ;
+			line-height: $font-base-md *2.5;
+   	 	width: 35%; 
+   	 	@include marg(20px auto 25px);
+   	}
+   	@media (max-width:992px) {
+   	 	font-size: $font-base-md * 1.64 ;
+			line-height: $font-base-md *2;
+   	 	width: 40%; 
+   	 	@include marg(20px auto 25px);
+   	}
+   	@media (max-width:768px) {
+   		font-size: $font-base-sm * 1.64 ;
+   	 	line-height: $font-base-sm*2;
+   	 	@include marg(15px auto 20px);
+   	}
+   	@media (max-width:660px) {
+   			width: 48%;
+   			font-size: $font-base-xs*1.64;
+   			@include marg(13px auto 15px );
+   	}
+   	@media (max-width:480px) {
+   			width: 50%;
+   			font-size: $font-base-xm*1.64;
+   			line-height: $font-base-xm*1.8;
+   			@include marg(5px auto  );
+   	}
+	}
+	button{
+	&.slid{
+		@include border(  $white, $width: 2px);
+		@include pad(15px 40px);
+		font-size: $font-h2-size;
+		
+		@media (max-width:1200px) {
+   	 font-size: $font-h2-size-lg; 
+   	}
+   	@media (max-width:992px) {
+   	 @include pad(10px 35px);
+   	 font-size: $font-h2-size-md; 
+   	}
+   	@media (max-width:768px) {
+   	 @include pad(8px 30px);
+   	 font-size: $font-h2-size-sm; 
+   	}
+   	@media (max-width:660px) {
+   	 @include pad(5px 20px);
+   	 font-size: $font-h2-size-xs; 
+   	}
+   	@media (max-width:480px) {
+   	 @include pad(5px 15px);
+   	 font-size: $font-h2-size-xm; 
+   	}
+		
+	}
+}
+
+}

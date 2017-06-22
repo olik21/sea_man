@@ -1,0 +1,83 @@
+$font-stack:    'OpenSansRegular', sans-serif;
+$font-h: 'OpenSansSemiBold'; 
+
+$font-base: 14px;
+$font-menu: $font-base +1;
+
+$font-h1-size: $font-base * 4.5;
+$font-h2-size: $font-base * 3;
+$font-h3-size: $font-base * 1.57;
+$font-h4-size: $font-base ;
+
+///********max width 1200  lg *********/
+$lg: 0.82;
+
+$font-base-lg: 14px * $lg;
+
+$font-menu-lg: ($font-base +1) * $lg;
+
+$font-h1-size-lg: $font-base * 4.5 * $lg;
+$font-h2-size-lg: $font-base * 3 * $lg;
+$font-h3-size-lg: $font-base * 1.57 * $lg;
+$font-h4-size-lg: $font-base ;
+
+///************************************/
+
+///********max width 992  md*********/
+$md: 0.78;
+
+$font-base-md: 14px * $md;
+
+$font-menu-md: ($font-base +1) * $md;
+
+$font-h1-size-md: $font-base * 4.5 * $md;
+$font-h2-size-md: $font-base * 3 * $md;
+$font-h3-size-md: $font-base * 1.57 *$md;
+$font-h4-size-md: $font-base * $md;
+
+///************************************/
+
+///********max width 768  md*********/
+$sm: 0.7;
+
+$font-base-sm: 14px * $sm;
+
+$font-menu-sm: ($font-base +1) * $sm;
+
+$font-h1-size-sm: $font-base * 4.5 * $sm;
+$font-h2-size-sm: $font-base * 3 * $sm;
+$font-h3-size-sm: $font-base * 1.57 *$sm;
+$font-h4-size-sm: $font-base * $sm;
+
+///************************************/
+
+$primary-color: #4e525d;
+$white: #fff;
+$gray-select: #f8f9fb;
+$gray-1: #eeeef0;
+$gray-2: #f1f1f1;
+
+$links-color: #484c55;
+$turquoise: #49cbcd;
+$dark-grey: #485460;
+$dark-grey-light: #788492;
+$purple: #bface2;
+
+///************************************/
+$all-width: 100%;
+
+$width-2: ($all-width/2);
+$width-3: ($all-width/3);
+$width-4: ($all-width/4);
+
+///*********************************/
+
+$a-link: $links-color;
+$a-hover: $turquoise;
+$a-active: $turquoise;
+
+///*********************************/
+
+
+
+

@@ -1,0 +1,9 @@
+img{
+	display: block;
+	
+}
+img.foto{
+	@include border-radius(150px);
+	@include border($gray-1, 5px);
+	
+}

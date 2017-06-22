@@ -1,4 +1,16 @@
 button{
-	background: blue;
-	color: #fff;
+	
+	color: $white;
+	font-family: $font-h;
+
+	background: none;
+	cursor: pointer;
+	@include pad(10px);
+	@include border-radius(3px);
+	@include border(  $turquoise, $width: 3px);
+	
+	&:hover{
+		@include opacity;
+	}
+	
 }

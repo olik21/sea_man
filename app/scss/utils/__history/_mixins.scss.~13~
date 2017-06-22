@@ -1,0 +1,32 @@
+@mixin linx ($link,  $hover, $active) {
+  a{
+    color: $link;
+     border-bottom: 3px solid $white;
+    
+    &:hover {
+      color: $hover;
+      background: $gray-select ;
+      border-bottom: 3px solid $hover;
+    }
+    &:active {
+      color: $active; 
+      background: $gray-select ;  
+      border-bottom: 3px solid $hover;
+    }
+  }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-radius: $radius;
+  border-radius: $radius;  
+}
+
+@mixin border( $color: $white, $width: 1px) {
+  border: {
+    style: solid;
+    width: $width;
+    color: $color;
+  }
+  
+}

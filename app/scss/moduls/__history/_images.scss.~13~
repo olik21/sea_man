@@ -1,0 +1,10 @@
+img{
+	display: block;
+	
+}
+img.foto{
+	@include border-radius(150px);
+	@include border($gray-1, 5px);
+	@include marg(100px, auto, 50px)
+	
+}

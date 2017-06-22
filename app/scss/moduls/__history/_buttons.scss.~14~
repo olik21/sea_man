@@ -1,0 +1,11 @@
+button{
+	
+	color: $white;
+	font-family: $font-h;
+	font-size: $font-h2-size;
+	background: none;
+	cursor: pointer;
+	@include border-radius(3px);
+	@include border(  $turquoise, $width: 3px);
+	
+}

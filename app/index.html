@@ -17,8 +17,11 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css" />	
 
-	<script type="text/javascript"  src="js/jquery-3.2.1.js"></script>		
-	<link rel="stylesheet" defer href="css/swiper.css">
+	<script  src="js/jquery-3.2.1.js"></script>	
+	<script  defer src="js/menu.js"></script>	
+	<script  defer src="js/swiper.js"></script>
+	<script  defer src="js/slider.js"></script>
+	
 	
 </head>
 <body >
@@ -36,8 +39,8 @@
 				<a href="#"><img  src="images/logo.png" alt="logo" /></a>
 
 			</div>
-
-			<ul>
+			<div class="menu-small menu-js"><img src="images/menu-drop.png" alt="menu"/></div>
+			<ul class="ul-js">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Service</a></li>
 				<li><a href="#">Portfolio</a></li>
@@ -47,27 +50,62 @@
 			</ul>
 		</nav>
 	</header>
-	
-	
 
-		
-
-	
 
 	<!-- HEADER EOF   -->
 
 	<!-- BEGIN CONTENT -->
+	 <!-- Slider main container -->
+       <section class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide1"><img src="images/slid1.png" alt=""/>
+           		<div class="note">
+           		 <h1>This is a main heading</h1>
+           		 <p>Lorem lpsum is simply dummy text of the printing</p>
+           		 <button class="slid" value="">Learn more</button>
+           		</div>
+            </div>
+            <div class="swiper-slide swiper-slide2"><img src="images/slid1.png" alt=""/></div>
+            <div class="swiper-slide swiper-slide1"><img src="images/slid1.png" alt=""/></div>
+            <div class="swiper-slide swiper-slide2"><img src="images/slid1.png" alt=""/></div>
+        </div>
+       
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
 
-	
+    </section>
 
-	<main class="content">		
-		<div class="wrapper">
+
+	<section class="content clearfix team ">		
+		<h2>The Team</h2>
+		<div class="col-4">
+			<div ><img src="images/foto1.png" alt="foto1" class="foto"/></div>
 			
-		</div>		
-	</main>
-
-	<section class="content">		
-	
+			<h3>Adrian Thomas</h3>
+			<h4>CEO & Founder</h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+		</div>
+		<div class="col-4">
+			<img src="images/no-foto.png" alt="" class="foto" />
+			
+			<h3>Narate Ketram</h3>
+			<h4>Creative Director</h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+		</div>
+		<div class="col-4">
+			<img src="images/no-foto.png" alt="" class="foto" />
+			
+			<h3>Fernando Comet</h3>
+			<h4>CEO & Founder</h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+		</div>
+		<div class="col-4">
+			<img src="images/no-foto.png" alt="" class="foto" />
+			
+			<h3>Adedayo saheed</h3>
+			<h4>Creative Director</h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+		</div>
 	</section>
 
 	<!-- CONTENT EOF   -->
@@ -89,7 +127,7 @@
 
 <!-- BODY EOF   -->
 	
-	
+
 
 </body>
 </html>
