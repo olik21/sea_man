@@ -2,6 +2,7 @@
         sass        = require('gulp-sass'), //Подключаем Sass пакет,
         browserSync = require('browser-sync'), // Подключаем Browser Sync
         concat      = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
+        uglify      = require('gulp-uglifyjs'), // Подключаем gulp-uglifyjs (для сжатия JS)
         cssnano     = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
         rename      = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
         del         = require('del'); // Подключаем библиотеку для удаления файлов и папок
@@ -22,7 +23,21 @@
             notify: false // Отключаем уведомления
         });
     });
+    
+      gulp.task('scripts', function() {
+        return gulp.src([ // Берем все необходимые библиотеки
         
+            'app/js/jquery-3.2.1.js' ,
+            'app/js/common.js' ,
+            'app/js/required_fields.js' ,
+            'app/js/swiper.js' ,
+            'app/js/slider.js' 
+            ])
+            .pipe(concat('script.min.js')) // Собираем их в кучу в новом файле libs.min.js
+            .pipe(uglify()) // Сжимаем JS файл
+            .pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
+    });
+    
     gulp.task('css-libs', ['sass'], function() {
         return gulp.src('app/css/style.css') // Выбираем файл для минификации
             .pipe(cssnano()) // Сжимаем
@@ -46,11 +61,11 @@
 
 
     
-    gulp.task('build', [ 'css-libs'], function() {
+    gulp.task('build', [ 'sass', 'scripts'], function() {
 
         var buildCss = gulp.src([ // Переносим CSS стили в продакшен
-            'app/css/style.min.css'
-           
+            'app/css/style.css',
+            'app/css/libs.min.css'
             ])
         .pipe(gulp.dest('dist/css'))
 

@@ -1,0 +1,20 @@
+@import 'vendors/swiper';
+
+@import 'utils/functions';
+@import 'utils/variables';
+@import 'utils/mixins';
+
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/base';
+
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'moduls/buttons';
+@import 'moduls/images';
+@import 'moduls/slider.scss';
+@import 'moduls/forms';
+
