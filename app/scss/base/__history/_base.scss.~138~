@@ -4,8 +4,6 @@ body {
   color: $primary-color;
 
 }
-
-
 h1, h2, h3, h4 {text-align: center;
 	margin-before: 0.8em;
    margin-after: 0.8em;

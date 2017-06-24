@@ -156,7 +156,6 @@ section.swiper-container{	@include pad ( 0 );}
 		line-height: $font-base*2.5;
 		width:25%;
 		@include marg(20px auto 30px);
-		@include text-shadow;
 		
 		
 		@media (max-width:1440px) {

@@ -35,7 +35,8 @@ input[type="submit"]{
 	float: right;
 	@include pad( 15px 50px);
 	&.disabled{
-		@include opacity ;
+		@include opacity(0.3) ;
+		cursor: default;
 	}
 }
 textarea {

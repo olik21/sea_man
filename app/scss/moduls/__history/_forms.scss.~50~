@@ -62,4 +62,3 @@ textarea {
 ::-moz-placeholder          {color:$links-color}/* Firefox 19+ */
 :-moz-placeholder           {color:$links-color}/* Firefox 18- */
 :-ms-input-placeholder      {color:$links-color}
-

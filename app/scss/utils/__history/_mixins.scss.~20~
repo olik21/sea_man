@@ -45,13 +45,6 @@
   margin: $margs;
 }
 
-@mixin  opacity ($val: 0.7) {
+@mixin  opacity  {
   opacity: 0.7;
-}
-@mixin background-size($val: 100%){
-	-webkit-background-size: $val;
-	-o-background-size: $val;
-	-moz-background-size: $val;
-	background-size: $val;
-
 }

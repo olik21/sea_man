@@ -45,7 +45,7 @@
   margin: $margs;
 }
 
-@mixin  opacity ($val: 0.7) {
+@mixin  opacity  {
   opacity: 0.7;
 }
 @mixin background-size($val: 100%){

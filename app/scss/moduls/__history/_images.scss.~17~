@@ -3,7 +3,6 @@ img{
 	max-width: 100%;
 }
 img.foto{
-	display: block;
 	@include border-radius(150px);
 	@include border($gray-1, 5px);
 	@include marg(100px auto 50px);

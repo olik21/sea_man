@@ -14,3 +14,7 @@ button, input[type="submit"]{
 	}
 	
 }
+input[type="submit"]{
+	border: none;
+	
+}

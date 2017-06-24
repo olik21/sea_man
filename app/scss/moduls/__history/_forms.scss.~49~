@@ -58,8 +58,7 @@ textarea {
 	backrgound: #e44c41;
 }
 	
-::-webkit-input-placeholder {color:$links-color}
-::-moz-placeholder          {color:$links-color}/* Firefox 19+ */
-:-moz-placeholder           {color:$links-color}/* Firefox 18- */
-:-ms-input-placeholder      {color:$links-color}
-
+::-webkit-input-placeholder {color:$gray-1}
+::-moz-placeholder          {color:$gray-1}/* Firefox 19+ */
+:-moz-placeholder           {color:$gray-1}/* Firefox 18- */
+:-ms-input-placeholder      {color:$gray-1}

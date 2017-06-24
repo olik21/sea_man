@@ -1,4 +1,4 @@
-button, input[type="submit"]{
+button{
 	
 	color: $white;
 	font-family: $font-h;

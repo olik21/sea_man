@@ -1,17 +1,16 @@
 @mixin linx ($link,  $hover, $active) {
   a{
     color: $link;
-     border-bottom: 3px solid $white;
     
     &:hover {
       color: $hover;
-      background: $gray-select ;
-      border-bottom: 3px solid $hover;
+      background: url("../images/menu-hover.png") repeat-x 0 100%;
+      
     }
     &:active {
       color: $active; 
-      background: $gray-select ;  
-      border-bottom: 3px solid $hover;
+      background: url("../images/menu-hover.png") repeat-x 0 100%; 
+     
     }
   }
 }
@@ -46,7 +45,7 @@
 }
 
 @mixin  opacity ($val: 0.7) {
-  opacity: 0.7;
+  opacity: $val;
 }
 @mixin background-size($val: 100%){
 	-webkit-background-size: $val;

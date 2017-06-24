@@ -8,8 +8,8 @@
    	}*/
 }
 
-header{
-
+.menu-fix{
+	
 	@include marg(0 auto);
 	&.fixed {
 	    position:fixed;z-index:50;

@@ -1,9 +1,0 @@
-button{
-	
-	color: $white;
-	@include border-radius(3px)
-	background: none;
-	cursor: pointer;
-	@include border(  $turquoise, $width: 3px);
-	
-}

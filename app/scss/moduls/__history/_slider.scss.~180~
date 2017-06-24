@@ -132,10 +132,9 @@ section.swiper-container{	@include pad ( 0 );}
 			}
 	
 	h1{
-		@include text-shadow;
 			@media (max-width:1200px) {
-				font-size: $font-h1-size-lg;
-			
+			//	font-size: $font-h1-size-lg;
+			font-size: 75px;
 			}
 			@media (max-width:992px) {
 				font-size: $font-h1-size-md;
@@ -156,7 +155,6 @@ section.swiper-container{	@include pad ( 0 );}
 		line-height: $font-base*2.5;
 		width:25%;
 		@include marg(20px auto 30px);
-		@include text-shadow;
 		
 		
 		@media (max-width:1440px) {

@@ -4,8 +4,6 @@ body {
   color: $primary-color;
 
 }
-
-
 h1, h2, h3, h4 {text-align: center;
 	margin-before: 0.8em;
    margin-after: 0.8em;
@@ -82,7 +80,7 @@ p{
 		background: $turquoise;
 }
 .hover{
-	@include opacity(0.2);
+	@include opacity;
 }
 .contact{
 	background: #181818 url("../images/bg-footer.png") no-repeat 50% 50%;

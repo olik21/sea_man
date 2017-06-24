@@ -1,7 +1,6 @@
 nav{
 	position: relative;
 	background: $white;
-
 	
 	height: 100px;
 	font-size: $font-menu; 

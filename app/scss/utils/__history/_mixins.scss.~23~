@@ -46,7 +46,7 @@
 }
 
 @mixin  opacity ($val: 0.7) {
-  opacity: 0.7;
+  opacity: $val;
 }
 @mixin background-size($val: 100%){
 	-webkit-background-size: $val;

@@ -9,11 +9,12 @@
 }
 
 header{
-
+	top:0;
+	z-index:50;
 	@include marg(0 auto);
 	&.fixed {
-	    position:fixed;z-index:50;
-	    top:0; left:50%;
+	    position:fixed;
+	    top:0; left:0;
 	//    width:100%;
 	   }
 }

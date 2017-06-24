@@ -12,9 +12,10 @@
 @import 'layout/grid';
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/forms';
+
 
 @import 'moduls/buttons';
 @import 'moduls/images';
 @import 'moduls/slider.scss';
-@import 'moduls/forms';
 

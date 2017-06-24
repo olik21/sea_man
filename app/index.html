@@ -19,6 +19,7 @@
 
 	<script  src="js/jquery-3.2.1.js"></script>	
 	<script  defer src="js/common.js"></script>	
+	<script  defer src="js/required_fields.js"></script>	
 	<script  defer src="js/swiper.js"></script>
 	<script  defer src="js/slider.js"></script>
 	
@@ -32,9 +33,9 @@
 
 <!-- BEGIN HEADER -->
 
-	<header class="content clearfix"><a name="home"></a>		
+	<header class="content clearfix menu-fix-js default-js"><a name="home"></a>		
 		
-		<nav>
+		<nav >
 			<div class="logo">
 				<a href="#"><img  src="images/logo.png" alt="logo" /></a>
 
@@ -123,7 +124,7 @@
 				<li>Prnare nisi pretium.</li>
 			</ul>
 
-			<div class="buy"><button value="">Buy now</button></div>
+			<div class="buy"><button value="" class="buy-js">Buy now</button></div>
 			
 			
 		</div>
@@ -139,7 +140,7 @@
 				<li>Prnare nisi pretium.</li>
 			</ul>
 
-			<div class="buy current"><button value="">Buy now</button></div>
+			<div class="buy current"><button value="" class="buy-js">Buy now</button></div>
 			
 			
 		</div>
@@ -155,15 +156,50 @@
 				<li>Prnare nisi pretium.</li>
 			</ul>
 
-			<div class="buy"><button value="">Buy now</button></div>
+			<div class="buy"><button value="" class="buy-js">Buy now</button></div>
 			
 			
 		</div>
 	  </div>
 	</section>	
 	<!-- CONTENT EOF   -->
-	<section class="content contact"><a name="contact"></a>
-		
+	<section class=" contact">
+		<div class="content clearfix"><a name="contact"></a>
+			<h2>Contact Us</h2>
+		<div class="col-2 footer">
+			<h3>Get in touch with us</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+			<div>
+				<img src="images/ico-fb.png" alt="faceebook"/>
+				<img src="images/ico-tw.png" alt="tweetter"/>
+				<img src="images/ico-g.png" alt="google"/>
+
+			</div>
+			<adress>
+				Posted by Dospel & GanjaParker<br>
+				+XX-XXXX - XXXX - XX<br>
+				info@mail.com
+
+			</adress>
+			
+		</div>
+		<div class="col-2 form_box">
+			<form action="#" method="post" class="rf">
+				
+		      	<input class="name rfield"  type="text" placeholder="Name" />
+		       
+		       	<input class="email rfield" type="text" placeholder="Email" />
+		       	 
+		        <textarea  placeholder="Message " class="rfield"></textarea>
+		       
+		       	<input class="btn_submit disabled" type="submit" value="Send" />
+		        
+
+			</form>
+		</div>
+
+
+		</div>
 	</section>
 	
 

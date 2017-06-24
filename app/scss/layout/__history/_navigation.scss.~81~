@@ -1,7 +1,7 @@
 nav{
 	position: relative;
 	background: $white;
-
+	border-bottom: 3px solid $white;
 	
 	height: 100px;
 	font-size: $font-menu; 
